@@ -17,6 +17,12 @@ IDENTITY_NAME="motoko_bootcamp_2023"
 dfx identity new "${IDENTITY_NAME}"
 ```
 
+- Or, if you need to import a previously created identity.
+
+```bash
+dfx identity import --seed-file identity.pem $IDENTITY_NAME
+```
+
 - Use the newly created identity
 
 ```bash
@@ -203,4 +209,3 @@ dfx canister id --network ic ${CANISTER_NAME}
     - Discord username
     - GitHub profile URL
     - Live on-chain canister ID
-
